@@ -74,20 +74,26 @@ section{padding:86px 0}
 .cta{background:linear-gradient(125deg,var(--navy2),#0d3f98);border-radius:30px;padding:52px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px;position:relative;overflow:hidden}
 .cta:after{content:"";position:absolute;right:-80px;top:-110px;width:300px;height:300px;border:1px solid rgba(255,255,255,.12);border-radius:50%;box-shadow:0 0 0 45px rgba(255,255,255,.03)}
 .cta h2{font-size:38px;letter-spacing:-1px}.cta p{color:#cbd8ee;margin-top:7px}.cta .btn{background:#fff;color:var(--navy);position:relative;z-index:1}
-.ws{
- display:grid;
- grid-template-columns:repeat(3, 1fr);
+.socials{
+ display:flex;
  gap:12px;
- margin-top:20px;
- max-width:500px;
+ margin-top:25px;
+ justify-content:flex-start;
+ align-items:center;
 }
 
 .social{
- text-align:center;
+ display:inline-flex;
+ align-items:center;
+ justify-content:center;
+ padding:12px 20px;
+ border:1px solid var(--line);
+ background:#fff;
+ border-radius:12px;
+ font-weight:800;
+ color:var(--navy);
  white-space:nowrap;
- padding:12px 16px;
 }
-.social{padding:12px 16px;border:1px solid var(--line);background:#fff;border-radius:12px;font-weight:800;color:var(--navy)}
 footer{background:#061b45;color:#b9c9e4;padding:30px 0}
 .foot{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:13px}
 .foot strong{color:#fff}
