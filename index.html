@@ -74,7 +74,7 @@ section{padding:86px 0}
 .cta{background:linear-gradient(125deg,var(--navy2),#0d3f98);border-radius:30px;padding:52px;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px;position:relative;overflow:hidden}
 .cta:after{content:"";position:absolute;right:-80px;top:-110px;width:300px;height:300px;border:1px solid rgba(255,255,255,.12);border-radius:50%;box-shadow:0 0 0 45px rgba(255,255,255,.03)}
 .cta h2{font-size:38px;letter-spacing:-1px}.cta p{color:#cbd8ee;margin-top:7px}.cta .btn{background:#fff;color:var(--navy);position:relative;z-index:1}
-.socials{
+.ws{
  display:grid;
  grid-template-columns:repeat(3, 1fr);
  gap:12px;
@@ -101,6 +101,36 @@ footer{background:#061b45;color:#b9c9e4;padding:30px 0}
  .cards,.events{grid-template-columns:1fr}.head{display:block}.head p{margin-top:8px}
  section{padding:65px 0}.feature img{height:330px}.cta{padding:35px;display:block}.cta .btn{margin-top:22px}
  .foot{display:block}.foot span{display:block;margin-top:7px}
+}.logo-text {
+  font-size: 26px;
+  font-weight: 900;
+  color: #061b45;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+.logo-text span {
+  color: #16A9C7;
+}.logo-text {
+  animation: logoFade 0.8s ease-out;
+}
+.logo-text,
+.links,
+.nav .btn,
+.hero > *,
+.hero-visual {
+  animation: slideInLeft 0.8s ease-out both;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 </style>
 </head>
@@ -108,14 +138,12 @@ footer{background:#061b45;color:#b9c9e4;padding:30px 0}
 
 <nav class="nav">
  <div class="container navin">
-  <a href="#top"><img class="logo" src="logo.png" alt="FLI Hub | BUC"></a>
+  <div class="logo-text">FLI <span>Hub</span> | BUC</div>
   <div class="links">
    <a href="#about">About</a><a href="#tracks">Tracks</a><a href="#events">Events</a><a href="#community">Community</a><a href="#partners">Partnerships</a>
-  </div>
-  <a class="btn" href="#join">Join FLI Hub</a>
- </div>
+  </div><a class="btn" href="#join">Join FLI Hub</a>
+</div>
 </nav>
-
 <header class="hero" id="top">
  <div class="container hero-grid">
   <div>
